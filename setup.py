@@ -8,13 +8,13 @@ from setuptools import find_packages, setup
 INSTALL_REQUIRES = ["numpy>=1.11.1", "scipy>=1.1.0", "scikit-image>=0.16.1", "PyYAML", "qudida>=0.0.4"]
 
 # If none of packages in first installed, install second package
-CHOOSE_INSTALL_REQUIRES = [
-    (
-        ("opencv-python>=4.1.1", "opencv-contrib-python>=4.1.1", "opencv-contrib-python-headless>=4.1.1"),
-        "opencv-python-headless>=4.1.1",
-    )
-]
-
+# CHOOSE_INSTALL_REQUIRES = [
+#     (
+#         ("opencv-python>=4.1.1", "opencv-contrib-python>=4.1.1", "opencv-contrib-python-headless>=4.1.1"),
+#         "opencv-python-headless>=4.1.1",
+#     )
+# ]
+CHOOSE_INSTALL_REQUIRES = []
 
 def get_version():
     current_dir = os.path.abspath(os.path.dirname(__file__))
