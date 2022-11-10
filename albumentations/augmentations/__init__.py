@@ -5,7 +5,7 @@ from .crops.functional import *
 from .crops.transforms import *
 
 # New transformations goes to individual files listed below
-from .domain_adaptation import *
+# from .domain_adaptation import *
 from .dropout.channel_dropout import *
 from .dropout.coarse_dropout import *
 from .dropout.cutout import *
